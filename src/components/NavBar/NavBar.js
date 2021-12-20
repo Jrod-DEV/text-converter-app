@@ -1,8 +1,8 @@
 import React from 'react';
 
 export const NavBar = () => {
-  return 
-    <>
-    
-    </>;
+  return;
+  <div class="container mx-auto px-4">
+      
+  </div>;
 };
