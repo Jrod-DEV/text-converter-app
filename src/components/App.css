@@ -1,9 +1,29 @@
 h1 {
-  margin-top: 3rem;
+  padding: 2rem;
   justify-content: center;
 }
 
-textarea {
+.mainForm {
+  align-items: center;
+  display: flex;
   margin-top: 3rem;
+  justify-content: space-between;
+}
+
+textarea {
   border: 1px solid;
+  margin-top: 3rem;
+}
+
+select {
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.convertBtn {
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 1rem;
 }
