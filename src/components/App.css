@@ -1,6 +1,10 @@
-h1 {
+header {
   padding: 2rem;
   justify-content: center;
+}
+
+header p {
+  font-size: 2rem;
 }
 
 .mainForm {
@@ -22,8 +26,17 @@ select {
 }
 
 .convertBtn {
+  border: 1px solid;
+  color: rgb(8, 145, 178);
+  border-radius: 6px;
   cursor: pointer;
+  padding: 1rem;
+}
+
+.clearBtn {
   border: 1px solid;
   border-radius: 6px;
+  color: red;
+  cursor: pointer;
   padding: 1rem;
 }

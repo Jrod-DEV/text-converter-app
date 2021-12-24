@@ -1,29 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { textConverter } from '../helpers/textConverter';
+import './App.css';
 // import { NavBar } from './NavBar/NavBar';
 
-import './App.css';
-
 export const App = () => {
+  const [value, setValue] = useState('');
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
+
+  const clearForm = () => {
+    setValue('');
+  };
+
   return (
     <div class="container mx-auto px-4">
-      <h1 class=" text-cyan-600">Play with your texts!</h1>
+      <header>
+        <p class="text-cyan-600">Play with your texts!</p>
+      </header>
       <div class="static">
         <hr />
         <form class="mainForm">
           <select name="select" id="">
-            <option>To CamelCase</option>
-            <option>TO UPERCASE</option>
-            <option>to lowercase</option>
-            <option>to Reverse</option>
+            <option>CamelCase</option>
+            <option>UPERCASE</option>
+            <option>lowercase</option>
+            <option>Reverse</option>
           </select>
 
-          <textarea rows="5" cols="50">
+          <textarea name="textarea" rows="5" cols="50" onChange={handleChange}>
             Write something here...
           </textarea>
 
           <button class="convertBtn" type="submit">
             Submit
           </button>
+          <button class="clearBtn" onclick={clearForm}>Clear</button>
         </form>
       </div>
     </div>
