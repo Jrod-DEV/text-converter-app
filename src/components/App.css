@@ -1,0 +1,63 @@
+header {
+  padding: 2rem;
+  justify-content: center;
+}
+
+header p {
+  font-size: 2rem;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainForm {
+  align-items: center;
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+textarea {
+  border: 1px solid;
+  margin-top: 3rem;
+}
+
+select {
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.selecButton {
+  border: 1px solid;
+  border-radius: 3px;
+  color: aqua;
+  padding: 1rem;
+  margin: 5px;
+}
+
+.convertBtn {
+  border: 1px solid;
+  color: rgb(8, 145, 178);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.clearBtn {
+  border: 1px solid;
+  border-radius: 6px;
+  color: red;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 1rem;
+}
+
+.resultantText {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
