@@ -54,5 +54,10 @@ select {
   cursor: pointer;
   margin-left: 5px;
   padding: 1rem;
+}
 
+.resultantText {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }

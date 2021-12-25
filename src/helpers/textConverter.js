@@ -8,16 +8,20 @@
 let reversedText = reverse("adam")
 console.log(revertsedText) // mada*/
 
-export const textConverter = () => {
-  const lowercase = (text) => {
-    return text.toLowerCase();
-  };
+/* export const lowercase = (text) => {
+  return text.toLowerCase();
+};
 
-  const uppercase = (text) => {
-    return text.toUpperCase();
-  };
+export const uppercase = (text) => {
+  return text.toUpperCase();
+};
 
-  const reverse = (text) => {
-    return text.split('').reverse().join('');
-  };
+export const reverse = (text) => {
+  return text.split('').reverse().join('');
+}; */
+
+export const TextTypes = {
+  lowercase: (text) => text.toLowerCase(),
+  uppercase: (text) => text.toUpperCase(),
+  reverse: (text) => text.split('').reverse().join(''),
 };

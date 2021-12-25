@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { textConverter } from '../helpers/textConverter';
+import { TextTypes } from '../helpers/textConverter';
+/* import { lowercase, reverse, uppercase } from '../helpers/textConverter'; */
+
 import './App.css';
 // import { NavBar } from './NavBar/NavBar';
 
@@ -11,13 +13,20 @@ export const App = () => {
   };
 
   const clearForm = () => {
-    setValue(' ');
+    setValue('');
   };
 
-  const lowerCase = (HOLA) => {
-    setValue(textConverter.lowerCase(value));
+  const lowerCase = () => {
+    setValue(TextTypes.lowercase(value));
   };
-  console.log(lowerCase);
+
+  const upperCase = () => {
+    setValue(TextTypes.uppercase(value));
+  };
+
+  const reverse = () => {
+    setValue(TextTypes.reverse(value));
+  };
 
   return (
     <div class="container mx-auto px-4">
@@ -28,25 +37,44 @@ export const App = () => {
         <hr />
         <div>
           <div>
-            <button class="selecButton">lowerCase</button>
-            <button class="selecButton">UPERCASE</button>
-            <button class="selecButton">REVERSE</button>
+            <button
+              class="selecButton bg-indigo-500 shadow-lg shadow-indigo-500/50 "
+              onClick={lowerCase}
+            >
+              lowerCase
+            </button>
+            <button
+              class="selecButton bg-indigo-500 shadow-lg shadow-indigo-500/50 "
+              onClick={upperCase}
+            >
+              UPERCASE
+            </button>
+            <button
+              class="selecButton bg-indigo-500 shadow-lg shadow-indigo-500/50 "
+              onClick={reverse}
+            >
+              REVERSE
+            </button>
           </div>
           {/*  onChange={lowerCase}>lowercase  */}
 
-          <textarea name="textarea" rows="10" cols="50" onChange={handleChange}>
-            Write something here...
-          </textarea>
+          <textarea
+            name="textarea"
+            rows="10"
+            cols="50"
+            value={value}
+            onChange={handleChange}
+          ></textarea>
 
           <div>
-            <button class="convertBtn" type="submit">
-              Submit
-            </button>
             <button class="clearBtn" onClick={clearForm}>
               Clear
             </button>
           </div>
         </div>
+      </div>
+      <div>
+        <p class="resultantText">{value}</p>
       </div>
     </div>
   );
