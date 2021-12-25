@@ -11,33 +11,42 @@ export const App = () => {
   };
 
   const clearForm = () => {
-    setValue('');
+    setValue(' ');
   };
+
+  const lowerCase = (HOLA) => {
+    setValue(textConverter.lowerCase(value));
+  };
+  console.log(lowerCase);
 
   return (
     <div class="container mx-auto px-4">
       <header>
         <p class="text-cyan-600">Play with your texts!</p>
       </header>
-      <div class="static">
+      <div class="text-container">
         <hr />
-        <form class="mainForm">
-          <select name="select" id="">
-            <option>CamelCase</option>
-            <option>UPERCASE</option>
-            <option>lowercase</option>
-            <option>Reverse</option>
-          </select>
+        <div>
+          <div>
+            <button class="selecButton">lowerCase</button>
+            <button class="selecButton">UPERCASE</button>
+            <button class="selecButton">REVERSE</button>
+          </div>
+          {/*  onChange={lowerCase}>lowercase  */}
 
-          <textarea name="textarea" rows="5" cols="50" onChange={handleChange}>
+          <textarea name="textarea" rows="10" cols="50" onChange={handleChange}>
             Write something here...
           </textarea>
 
-          <button class="convertBtn" type="submit">
-            Submit
-          </button>
-          <button class="clearBtn" onclick={clearForm}>Clear</button>
-        </form>
+          <div>
+            <button class="convertBtn" type="submit">
+              Submit
+            </button>
+            <button class="clearBtn" onClick={clearForm}>
+              Clear
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
