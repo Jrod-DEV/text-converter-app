@@ -59,6 +59,7 @@ export const App = () => {
           {/*  onChange={lowerCase}>lowercase  */}
 
           <textarea
+          class="textInput"
             name="textarea"
             rows="10"
             cols="50"
