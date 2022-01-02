@@ -4,7 +4,10 @@ import { useDarkMode } from '../../hooks/useDarkMode';
 export const NavBar = () => {
   const [colorTheme, setTheme] = useDarkMode();
   return (
-    <div className="fixed top-0 bg-blue-100 w-full p-3">
+    <div className="flex items-center justify-between fixed top-0 bg-blue-100 w-full p-3">
+      <p className="text-lg">
+        TEXT CONVERTER APP
+      </p>
       <span
         onClick={() => setTheme(colorTheme)}
         className="w-10 h-10 bg-indigo-500 rounded-full shadow-lg cursor-pointer text-white flex items-center justify-center"
