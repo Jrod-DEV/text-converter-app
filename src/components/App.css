@@ -25,6 +25,10 @@ textarea {
   margin-top: 3rem;
 }
 
+.textInput {
+  padding: 2rem;
+}
+
 select {
   cursor: pointer;
   border: 1px solid;
@@ -58,6 +62,8 @@ select {
 
 .resultantText {
   display: flex;
+  font-weight: bold;
+  font-style: italic;
   justify-content: center;
   margin-top: 3rem;
 }
