@@ -1,16 +1,11 @@
-header {
-  padding: 2rem;
-  justify-content: center;
-}
-
 header p {
   font-size: 2rem;
 }
 
 .text-container {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .mainForm {
