@@ -31,7 +31,7 @@ export const App = () => {
 
   useDarkMode();
   return (
-    <div class="min-h-screen dark:bg-black">
+    <div class="min-h-screen dark:bg-black transition duration-500">
       <header class="pb-40">
         <NavBar />
       </header>

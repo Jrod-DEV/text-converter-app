@@ -9,7 +9,7 @@ export const NavBar = () => {
         onClick={() => setTheme(colorTheme)}
         className="w-10 h-10 bg-indigo-500 block rounded-full shadow-lg cursor-pointer text-white flex items-center justify-center"
       >
-        {colorTheme === 'ligth' ? (
+        {colorTheme === 'light' ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
