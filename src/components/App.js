@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { TextTypes } from '../helpers/textConverter';
 import { useDarkMode } from '../hooks/useDarkMode';
-/* import { lowercase, reverse, uppercase } from '../helpers/textConverter'; */
 
-import './App.css';
 import { NavBar } from './NavBar/NavBar';
+import './App.css';
 
 export const App = () => {
   const [value, setValue] = useState('');
