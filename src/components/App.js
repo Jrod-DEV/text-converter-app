@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { TextTypes } from '../helpers/textConverter';
+import { useDarkMode } from '../hooks/useDarkMode';
 /* import { lowercase, reverse, uppercase } from '../helpers/textConverter'; */
 
 import './App.css';
-// import { NavBar } from './NavBar/NavBar';
+import { NavBar } from './NavBar/NavBar';
 
 export const App = () => {
   const [value, setValue] = useState('');
@@ -28,11 +29,19 @@ export const App = () => {
     setValue(TextTypes.reverse(value));
   };
 
+  useDarkMode();
   return (
-    <div class="container mx-auto px-4">
-      <header>
-        <p class="text-cyan-600">Play with your texts!</p>
+    <div class="min-h-screen dark:bg-black transition duration-500">
+      <header class="pb-40">
+        <NavBar />
       </header>
+
+      {/*      <header>
+        <p class="bg-blue-400 text-blue-600 dark:text-white dark:bg-black">
+          Play with your texts!
+        </p>
+      </header> */}
+
       <div class="text-container">
         <hr />
         <div>
@@ -59,6 +68,7 @@ export const App = () => {
           {/*  onChange={lowerCase}>lowercase  */}
 
           <textarea
+            class="textInput dark:bg-slate-600 dark:text-indigo-100"
             name="textarea"
             rows="10"
             cols="50"
@@ -74,7 +84,7 @@ export const App = () => {
         </div>
       </div>
       <div>
-        <p class="resultantText">{value}</p>
+        <p class="resultantText dark:text-indigo-50">{value}</p>
       </div>
     </div>
   );

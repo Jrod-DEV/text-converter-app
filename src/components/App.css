@@ -1,16 +1,11 @@
-header {
-  padding: 2rem;
-  justify-content: center;
-}
-
 header p {
   font-size: 2rem;
 }
 
 .text-container {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .mainForm {
@@ -25,6 +20,10 @@ textarea {
   margin-top: 3rem;
 }
 
+.textInput {
+  padding: 2rem;
+}
+
 select {
   cursor: pointer;
   border: 1px solid;
@@ -36,7 +35,7 @@ select {
   border-radius: 3px;
   color: aqua;
   padding: 1rem;
-  margin: 5px;
+  margin-bottom: 10px;
 }
 
 .convertBtn {
@@ -52,12 +51,14 @@ select {
   border-radius: 6px;
   color: red;
   cursor: pointer;
-  margin-left: 5px;
+  margin-top: 10px;
   padding: 1rem;
 }
 
 .resultantText {
   display: flex;
+  font-weight: bold;
+  font-style: italic;
   justify-content: center;
   margin-top: 3rem;
 }
