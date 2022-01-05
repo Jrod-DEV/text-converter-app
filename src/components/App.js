@@ -29,6 +29,10 @@ export const App = () => {
     setValue(TextTypes.reverse(value));
   };
 
+  const inverseCase = () => {
+    setValue(TextTypes.inverseType(value));
+  };
+
   useDarkMode();
   return (
     <div class="min-h-screen dark:bg-black transition duration-500">
@@ -36,36 +40,35 @@ export const App = () => {
         <NavBar />
       </header>
 
-      {/*      <header>
-        <p class="bg-blue-400 text-blue-600 dark:text-white dark:bg-black">
-          Play with your texts!
-        </p>
-      </header> */}
-
       <div class="text-container">
         <hr />
         <div>
           <div>
             <button
-              class="selecButton bg-indigo-500 shadow-lg shadow-indigo-500/50 "
+              class="selecButton bg-indigo-500 shadow-lg shadow-indigo-500/50"
               onClick={lowerCase}
             >
               lowerCase
             </button>
             <button
-              class="selecButton bg-indigo-500 shadow-lg shadow-indigo-500/50 "
+              class="selecButton bg-indigo-500 shadow-lg shadow-indigo-500/50 ml-1"
               onClick={upperCase}
             >
               UPERCASE
             </button>
             <button
-              class="selecButton bg-indigo-500 shadow-lg shadow-indigo-500/50 "
+              class="selecButton bg-indigo-500 shadow-lg shadow-indigo-500/50 ml-1"
               onClick={reverse}
             >
               REVERSE
             </button>
+            <button
+              class="selecButton bg-indigo-500 shadow-lg shadow-indigo-500/50 ml-1"
+              onClick={inverseCase}
+            >
+              InverseCase
+            </button>
           </div>
-          {/*  onChange={lowerCase}>lowercase  */}
 
           <textarea
             class="textInput dark:bg-slate-600 dark:text-indigo-100"
