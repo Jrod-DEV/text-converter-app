@@ -64,7 +64,7 @@ select {
   display: flex;
   font-weight: bold;
   font-style: italic;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 3rem;
   min-width: 400px;
 }

@@ -82,9 +82,7 @@ export const App = () => {
             cols="50"
             value={value}
             onChange={handleChange}
-          >
-            Write something here...
-          </textarea>
+          ></textarea>
 
           <div>
             <button class="clearBtn mt-4" onClick={clearForm}>
@@ -96,11 +94,11 @@ export const App = () => {
 
       <div class="copy-container flex justify-center m-8">
         <CopyToClipboard text={value}>
-          <p
+          <div
+            class="flex justify-between resultantText border-2 max-w-lg dark:text-indigo-50 p-4"
             onClick={notify}
-            class=" flex justify-between align-center resultantText border-2 dark:text-indigo-50 p-4"
           >
-            {value}
+            <p>{value}</p>
             <button class="ml-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +116,7 @@ export const App = () => {
               </svg>
             </button>
             <Toaster />
-          </p>
+          </div>
         </CopyToClipboard>
       </div>
     </div>
