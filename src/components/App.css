@@ -25,9 +25,9 @@ textarea {
 }
 
 select {
+  border-radius: 3px;
   cursor: pointer;
   border: 1px solid;
-  border-radius: 3px;
 }
 
 .selecButton {
@@ -40,9 +40,9 @@ select {
 
 .convertBtn {
   border: 1px solid;
-  color: rgb(8, 145, 178);
   border-radius: 6px;
   cursor: pointer;
+  color: rgb(8, 145, 178);
   padding: 1rem;
 }
 
@@ -51,14 +51,20 @@ select {
   border-radius: 6px;
   color: red;
   cursor: pointer;
-  margin-top: 10px;
   padding: 1rem;
 }
 
+.clearBtn:hover {
+  background-color: red;
+  color: black;
+}
+
 .resultantText {
+  border-radius: 6px;
   display: flex;
   font-weight: bold;
   font-style: italic;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 3rem;
+  min-width: 400px;
 }
