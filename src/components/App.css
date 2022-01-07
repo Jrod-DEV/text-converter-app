@@ -56,9 +56,11 @@ select {
 }
 
 .resultantText {
+  border-radius: 6px;
   display: flex;
   font-weight: bold;
   font-style: italic;
   justify-content: center;
   margin-top: 3rem;
+  min-width: 400px;
 }
