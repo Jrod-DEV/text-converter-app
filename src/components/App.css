@@ -51,8 +51,12 @@ select {
   border-radius: 6px;
   color: red;
   cursor: pointer;
-  margin-top: 10px;
   padding: 1rem;
+}
+
+.clearBtn:hover {
+  background-color: red;
+  color: black;
 }
 
 .resultantText {

@@ -48,7 +48,7 @@ export const App = () => {
       <div class="text-container">
         <hr />
         <div>
-          <div>
+          <div class="mb-4">
             <button
               class="selecButton bg-indigo-500 shadow-lg shadow-indigo-500/50"
               onClick={lowerCase}
@@ -82,17 +82,19 @@ export const App = () => {
             cols="50"
             value={value}
             onChange={handleChange}
-          ></textarea>
+          >
+            Write something here...
+          </textarea>
 
           <div>
-            <button class="clearBtn" onClick={clearForm}>
+            <button class="clearBtn mt-4" onClick={clearForm}>
               Clear
             </button>
           </div>
         </div>
       </div>
 
-      <div class="copy-container flex justify-center ">
+      <div class="copy-container flex justify-center m-8">
         <CopyToClipboard text={value}>
           <p
             onClick={notify}
