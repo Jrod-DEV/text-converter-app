@@ -9,7 +9,7 @@ import './App.css';
 import { NavBar } from './NavBar/NavBar';
 
 const notify = () =>
-  toast('Text copied to clipboard', { position: 'bottom-right' });
+  toast.success('Text copied to clipboard', { position: 'bottom-center' });
 
 export const App = () => {
   const [value, setValue] = useState('');
@@ -46,7 +46,6 @@ export const App = () => {
       </header>
 
       <div class="text-container">
-        <hr />
         <div>
           <div class="mb-4">
             <button
@@ -95,7 +94,7 @@ export const App = () => {
       <div class="copy-container flex justify-center m-8">
         <CopyToClipboard text={value}>
           <div
-            class="flex justify-between resultantText border-2 max-w-lg dark:text-indigo-50 p-4"
+            class="flex justify-between resultantText border-2 dark:text-indigo-50 p-4"
             onClick={notify}
           >
             <p>{value}</p>

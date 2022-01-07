@@ -25,9 +25,9 @@ textarea {
 }
 
 select {
+  border-radius: 3px;
   cursor: pointer;
   border: 1px solid;
-  border-radius: 3px;
 }
 
 .selecButton {
@@ -40,9 +40,9 @@ select {
 
 .convertBtn {
   border: 1px solid;
-  color: rgb(8, 145, 178);
   border-radius: 6px;
   cursor: pointer;
+  color: rgb(8, 145, 178);
   padding: 1rem;
 }
 
